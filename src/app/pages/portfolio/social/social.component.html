@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-12">
+    <h1>My socials</h1>
+  </div>
+</div>
+
+<div class="row">
+  <ng-container *ngFor="let social of socials">
+    <div class="col-12 mb-3">
+      <app-social-item [social]="social"></app-social-item>
+    </div>
+  </ng-container>
+</div>

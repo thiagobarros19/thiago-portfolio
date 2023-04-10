@@ -1,0 +1,30 @@
+<div class="row experience">
+  <div class="col-3 experience-logo">
+    <img [src]="experience.logoUrl" alt="">
+  </div>
+  <div class="col-9">
+    <div class="row">
+      <div class="col-12">
+        <h2>{{experience.companyName}}</h2>
+      </div>
+    </div>
+    <ng-container *ngFor="let experienceJob of experience.experienceJobs">
+      <div class="row">
+        <div class="col-12 role">
+          {{experienceJob.role}}
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-12">
+          {{experienceJob.startDate | date: 'MMM, y'}} - {{experienceJob.endDate | date: 'MMM, y'}} ·
+          {{dateDiff(experienceJob.startDate, experienceJob.endDate)}}
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-12">
+          {{experienceJob.description}}
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

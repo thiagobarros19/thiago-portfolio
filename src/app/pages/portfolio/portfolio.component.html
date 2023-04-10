@@ -1,0 +1,26 @@
+<div class="container-portfolio">
+  <div class="container-window-screen">
+    <app-header-bar [title]="title"></app-header-bar>
+    <div class="d-flex h-100">
+      <div class="sidebar py-3" [ngClass]="{'closed-sidebar': closedSidebar}">
+        <ng-container *ngFor="let sidebarItem of sidebarItens">
+          <div class="sidebar-item row align-items-center px-0 ms-0" (click)="setActiveTab(sidebarItem.slug)"
+            [ngClass]="{'active': sidebarItem.active}">
+            <div class="col-auto">
+              <lucide-icon [name]="sidebarItem.icon" [ngClass]="{'active': sidebarItem.active}"></lucide-icon>
+            </div>
+            <div class="col px-0 title" [ngClass]="{
+              'closed-sidebar': closedSidebar,
+              'active': sidebarItem.active
+            }">
+              {{sidebarItem.title}}
+            </div>
+          </div>
+        </ng-container>
+      </div>
+      <div class="content p-3" [ngClass]="{'closed-sidebar': closedSidebar}">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

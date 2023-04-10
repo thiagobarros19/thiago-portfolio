@@ -1,0 +1,38 @@
+@import '../../../../assets/scss/variables';
+
+.window-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+
+  cursor: pointer;
+  transition: .2s;
+
+  &.close {
+    background-color: #ff5e57;
+
+    &:hover {
+     background-color: darken(#ff5e57, 20%);
+    }
+  }
+
+  &.minimize {
+    background-color: #febc2f;
+
+    &:hover {
+     background-color: darken(#febc2f, 20%);
+    }
+  }
+
+  &.expand {
+    background-color: #29c841;
+
+    &:hover {
+     background-color: darken(#29c841, 20%);
+    }
+  }
+}
+
+.title {
+  color: $text;
+}

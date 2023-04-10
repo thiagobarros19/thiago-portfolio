@@ -1,0 +1,30 @@
+<div class="row mb-3">
+  <div class="col-12">
+    <h1>Frontend</h1>
+  </div>
+  <ng-container *ngFor="let frontendTech of frontendTechs">
+    <div class="col-auto">
+      <app-tech-item [techonology]="frontendTech"></app-tech-item>
+    </div>
+  </ng-container>
+</div>
+<div class="row mb-3">
+  <div class="col-12">
+    <h1>Backend</h1>
+  </div>
+  <ng-container *ngFor="let backendTech of backendTechs">
+    <div class="col-auto">
+      <app-tech-item [techonology]="backendTech"></app-tech-item>
+    </div>
+  </ng-container>
+</div>
+<div class="row mb-3">
+  <div class="col-12">
+    <h1>Database</h1>
+  </div>
+  <ng-container *ngFor="let databaseTech of databaseTechs">
+    <div class="col-auto">
+      <app-tech-item [techonology]="databaseTech"></app-tech-item>
+    </div>
+  </ng-container>
+</div>

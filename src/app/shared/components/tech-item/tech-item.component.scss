@@ -1,0 +1,22 @@
+@import '../../../../assets/scss/variables';
+
+.tech {
+  max-width: 200px;
+
+  color: $text;
+  font-size: 14px;
+  line-height: 18px;
+
+  .tech-logo {
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  .title {
+    color: $textLight;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

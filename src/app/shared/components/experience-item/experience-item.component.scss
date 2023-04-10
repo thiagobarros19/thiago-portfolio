@@ -1,0 +1,21 @@
+@import '../../../../assets/scss/variables';
+
+.experience {
+  color: $text;
+
+  .experience-logo {
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 8px;
+    }
+  }
+
+  h2 {
+    color: $textLight;
+  }
+
+  .role {
+    color: $textLight;
+  }
+}

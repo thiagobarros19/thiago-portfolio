@@ -1,0 +1,19 @@
+@import '../../../../assets/scss/variables';
+
+.profile {
+  color: $text;
+  font-size: 14px;
+  line-height: 18px;
+
+  b {
+    color: $textLight;
+  }
+
+  .profile-img {
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 8px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <h1>My Experience</h1>
+    </div>
+  </div>
+  <ng-container *ngFor="let experience of experiences">
+    <div class="row mt-3">
+      <div class="col-12">
+        <app-experience-item [experience]="experience"></app-experience-item>
+      </div>
+    </div>
+  </ng-container>
+</div>

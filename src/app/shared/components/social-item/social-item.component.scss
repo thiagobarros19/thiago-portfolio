@@ -1,0 +1,12 @@
+@import '../../../../assets/scss/variables';
+
+.social {
+  color: $textLight;
+
+  .social-logo {
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

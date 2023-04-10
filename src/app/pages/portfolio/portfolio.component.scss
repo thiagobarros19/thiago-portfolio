@@ -1,0 +1,90 @@
+@import '../../../assets/scss/variables';
+
+.container-portfolio {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url('../../../assets/images/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container-window-screen {
+    width: 90%;
+    max-width: 1120px;
+    height: 90%;
+    max-height: 700px;
+
+    border-radius: 8px;
+
+    background-color: $backgroundDark;
+
+    .sidebar {
+      width: 260px;
+      height: 100%;
+      background-color: $backgroundDark;
+      transition: .2s;
+
+      display: flex;
+      flex-direction: column;
+
+      &.closed-sidebar {
+        width: 50px;
+      }
+
+      .sidebar-item {
+        height: 60px;
+        border-left: 2px solid $backgroundDark;
+        cursor: pointer;
+
+        &.active {
+          border-left: 2px solid $textLight;
+        }
+
+        .title {
+          color: $text;
+          font-size: 14px;
+          line-height: 18px;
+
+          transition: .2s all ease;
+
+          &.active {
+            color: $textLight;
+          }
+
+          &.closed-sidebar {
+            width: 0px;
+          }
+        }
+
+        lucide-icon {
+          color: $text;
+          width: 24px;
+          height: 24px;
+
+          &.active {
+            color: $textLight;
+          }
+        }
+      }
+    }
+
+    .content {
+      width: calc(100% - 260px);
+      height: 100%;
+      background-color: $background;
+      transition: .2s;
+      overflow: scroll;
+
+      flex: 1;
+
+      &.closed-sidebar {
+        width: calc(100% - 50px);
+      }
+    }
+  }
+}

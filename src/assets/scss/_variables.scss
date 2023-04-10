@@ -1,0 +1,24 @@
+
+$backgroundDark: #20222b !default;
+$background: #282a36 !default;
+$currentLine: #44475a !default;
+$foreground: #f8f8f2 !default;
+$comment: #6272a4 !default;
+$cyan: #8be9fd !default;
+$green: #50fa7b !default;
+$teal: #20c997 !default;
+$orange: #ffb86c !default;
+$pink: #ff79c6 !default;
+$purple: #bd93f9 !default;
+$red: #ff5555 !default;
+$yellow: #f1fa8c !default;
+$blue: #3265F4 !default;
+$indigo: #6610f2 !default;
+
+$text: #908CAA !default;
+$textLight: #E0DEF2 !default;
+
+
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints';
