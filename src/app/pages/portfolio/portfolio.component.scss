@@ -23,6 +23,15 @@
 
     background-color: $backgroundDark;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-content {
+      height: inherit;
+      flex: 1;
+    }
+
     .sidebar {
       width: 260px;
       height: 100%;
@@ -68,6 +77,18 @@
 
           &.active {
             color: $textLight;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 900px) {
+      .sidebar {
+        width: 50px;
+
+        .sidebar-item {
+          .title {
+            width: 0px;
           }
         }
       }

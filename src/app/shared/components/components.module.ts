@@ -5,12 +5,14 @@ import { TechItemComponent } from './tech-item/tech-item.component';
 import { SocialItemComponent } from './social-item/social-item.component';
 import { MatButtonModule } from '@angular/material/button';
 import { ExperienceItemComponent } from './experience-item/experience-item.component';
+import { FooterBarComponent } from './footer-bar/footer-bar.component';
 
 const components = [
   HeaderBarComponent,
   TechItemComponent,
   SocialItemComponent,
-  ExperienceItemComponent
+  ExperienceItemComponent,
+  FooterBarComponent
 ]
 
 @NgModule({
