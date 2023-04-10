@@ -11,13 +11,13 @@ export class TechnologiesComponent {
 
   public frontendTechs: Technology[] = [
     {
-      logoUrl: 'assets/images/angular.svg',
+      logoUrl: 'assets/images/technology/angular.svg',
       title: 'Angular',
       expertise: ExpertiseType.EXPERT,
       age: 3,
     },
     {
-      logoUrl: 'assets/images/react.svg',
+      logoUrl: 'assets/images/technology/react.svg',
       title: 'React',
       expertise: ExpertiseType.INTERMEDIATE,
       age: 1,
@@ -26,13 +26,13 @@ export class TechnologiesComponent {
 
   public backendTechs: Technology[] = [
     {
-      logoUrl: 'assets/images/nestjs.svg',
+      logoUrl: 'assets/images/technology/nestjs.svg',
       title: 'NestJS',
       expertise: ExpertiseType.ADVANCED,
       age: 1,
     },
     {
-      logoUrl: 'assets/images/laravel.svg',
+      logoUrl: 'assets/images/technology/laravel.svg',
       title: 'Laravel',
       expertise: ExpertiseType.INTERMEDIATE,
       age: 1,
@@ -41,13 +41,13 @@ export class TechnologiesComponent {
 
   public databaseTechs: Technology[] = [
     {
-      logoUrl: 'assets/images/postgres.svg',
+      logoUrl: 'assets/images/technology/postgres.svg',
       title: 'Postgres',
       expertise: ExpertiseType.ADVANCED,
       age: 2,
     },
     {
-      logoUrl: 'assets/images/mysql.png',
+      logoUrl: 'assets/images/technology/mysql.png',
       title: 'MySql',
       expertise: ExpertiseType.INTERMEDIATE,
       age: 1,

@@ -10,7 +10,7 @@ import { Experience } from 'src/app/model/application';
 export class ExperienceComponent {
   public experiences: Experience[] = [
     {
-      logoUrl: 'assets/images/actionlabs.jpeg',
+      logoUrl: 'assets/images/experience/actionlabs.jpeg',
       companyName: 'Action Labs',
       experienceJobs: [
         {
@@ -28,7 +28,7 @@ export class ExperienceComponent {
       ]
     },
     {
-      logoUrl: 'assets/images/inforpop.png',
+      logoUrl: 'assets/images/experience/inforpop.png',
       companyName: 'Inforpop Pharma',
       experienceJobs: [
         {
@@ -40,7 +40,7 @@ export class ExperienceComponent {
       ]
     },
     {
-      logoUrl: 'assets/images/officecom.jpeg',
+      logoUrl: 'assets/images/experience/officecom.jpeg',
       companyName: 'Officecom Sistemas',
       experienceJobs: [
         {

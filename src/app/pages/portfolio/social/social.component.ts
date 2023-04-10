@@ -10,17 +10,17 @@ import { Social } from 'src/app/model/application';
 export class SocialComponent {
   public socials: Social[] = [
     {
-      logoUrl: 'assets/images/linkedin.png',
+      logoUrl: 'assets/images/social/linkedin.png',
       socialUrl: 'https://www.linkedin.com/in/ts-barros/',
       title: 'ts-barros'
     },
     {
-      logoUrl: 'assets/images/github.png',
+      logoUrl: 'assets/images/social/github.png',
       socialUrl: 'https://github.com/thiagobarros19',
       title: 'thiagobarros19'
     },
     {
-      logoUrl: 'assets/images/instagram.png',
+      logoUrl: 'assets/images/social/instagram.png',
       socialUrl: 'https://www.instagram.com/th.sbarros/',
       title: '@th.sbarros'
     },

@@ -8,6 +8,10 @@
   cursor: pointer;
   transition: .2s;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   &.close {
     background-color: #ff5e57;
 
@@ -30,6 +34,11 @@
     &:hover {
      background-color: darken(#29c841, 20%);
     }
+  }
+
+  lucide-icon {
+    width: 20px;
+    height: 20px;
   }
 }
 

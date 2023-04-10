@@ -6,6 +6,7 @@ import { SocialItemComponent } from './social-item/social-item.component';
 import { MatButtonModule } from '@angular/material/button';
 import { ExperienceItemComponent } from './experience-item/experience-item.component';
 import { FooterBarComponent } from './footer-bar/footer-bar.component';
+import { LucideAngularModule, Maximize2, Minimize2, Minus, X } from 'lucide-angular';
 
 const components = [
   HeaderBarComponent,
@@ -20,7 +21,13 @@ const components = [
   exports: components,
   imports: [
     CommonModule,
-    MatButtonModule
+    MatButtonModule,
+    LucideAngularModule.pick({
+      Minimize2,
+      Maximize2,
+      X,
+      Minus
+    })
   ]
 })
 export class ComponentsModule { }
