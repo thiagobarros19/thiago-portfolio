@@ -28,7 +28,8 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/.htaccess"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/pink-bluegrey.css",
