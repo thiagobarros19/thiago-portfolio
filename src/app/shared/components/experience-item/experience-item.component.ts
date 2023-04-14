@@ -17,6 +17,17 @@ export class ExperienceItemComponent {
 
     const years = Math.floor(date1.diff(date2, 'month') / 12);
     const months = date1.diff(date2, 'month') % 12;
-    return `${years} years ${months} months`;
+
+    let res = '';
+
+    if(years) {
+      res += years === 1 ? `${years} year ` : `${years} years `;
+    }
+
+    if(months) {
+      res += months === 1 ? `${months} month ` : `${months} months `;
+    }
+
+    return res;
   }
 }

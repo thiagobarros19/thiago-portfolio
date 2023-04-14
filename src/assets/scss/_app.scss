@@ -82,3 +82,7 @@ blockquote {
 		line-height: #{$i};
 	}
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+}
