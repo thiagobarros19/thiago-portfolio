@@ -1,6 +1,7 @@
 <div class="container-portfolio">
-  <div class="container-window-screen">
-    <app-header-bar [title]="title"></app-header-bar>
+  <div #header class="container-window-screen">
+    <app-header-bar [title]="title" (onMaximizeClick)="maximize()" (onRestoreClick)="restore()"
+      (onMinimizeClick)="minimize()" (onCloseClick)="close()"></app-header-bar>
     <div class="d-flex container-window-screen-content">
       <div class="sidebar py-3" [ngClass]="{'closed-sidebar': closedSidebar}">
         <ng-container *ngFor="let sidebarItem of sidebarItens">

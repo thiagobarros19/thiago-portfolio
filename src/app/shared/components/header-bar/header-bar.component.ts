@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header-bar',
@@ -8,4 +8,18 @@ import { Component, Input } from '@angular/core';
 export class HeaderBarComponent {
   @Input()
   public title: string = 'Thiago Barros';
+
+  @Output()
+  public onMaximizeClick = new EventEmitter();
+
+  @Output()
+  public onRestoreClick = new EventEmitter();
+
+  @Output()
+  public onMinimizeClick = new EventEmitter();
+
+  @Output()
+  public onCloseClick = new EventEmitter();
+
+  public isMaximized: boolean = false;
 }
